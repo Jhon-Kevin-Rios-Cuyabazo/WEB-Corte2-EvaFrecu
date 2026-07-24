@@ -1,0 +1,26 @@
+1\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{cite}
+
+\title{Informe Técnico: Sistema de Gestión de Inventario}
+\author{Jhon Rios}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+El presente documento describe el desarrollo de la API REST para la gestión de inventario del Mercado Municipal de Quevedo, utilizando Spring Boot 3, PostgreSQL, Redis y JWT.
+
+\section{Arquitectura}
+Se empleó una arquitectura por capas separando controladores, servicios y repositorios \cite{martin2017clean}. La paginación y validación se aplicó en los endpoints.
+
+\section{Evidencias}
+Las capturas de funcionamiento se encuentran en la carpeta de evidencias, verificando el funcionamiento del cache-aside \cite{kleppmann2017design} y JWT.
+
+\bibliographystyle{plain}
+\bibliography{referencias}
+
+\end{document}
